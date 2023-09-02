@@ -5,10 +5,10 @@ import numpy as np
 def MSE(target, y):
     return 0.5 * np.sum((y-target)**2)
 
-target = np.array([0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0,0.0, 0.0,])
-
 y1 = np.array([0.0, 0.0, 0.8, 0.1, 0.0, 0.0, 0.0, 0.1, 0.0, 0.0])
-y2 = np.array([0.9, 0.0, 0.1, 0.0, 0.0, 0.0, 0.0, 0.1, 0.0, 0.0])
+y2 = np.array([0.9, 0.0, 0.1, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0])
+
+target = np.array([0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,])
 
 print(np.round(MSE(target, y1),2))
 print(np.round(MSE(target, y2),2))
