@@ -1,4 +1,4 @@
-#AND 동작을 하는 perceptron 기능을 직접 코딩
+#AND 동작을 하는 perceptron (순수 파이썬 사용)
 
 epsilon = 0.0000001
 

@@ -1,10 +1,10 @@
-# numpy와 벡터 내적으로 perceptron 기능을 직접 코딩
+#AND 동작을 하는 perceptron (numpy와 벡터 내적 사용)
 
 import numpy as np
 epsilon = 0.0000001
 
 def perceptron(x1, x2):
-    X = np.array([x1, x2])
+    X = np.array([[x1], [x2]])
     W = np.array([1.0, 1.0])
     B = -1.5
     sum = np.dot(W, X) + B
